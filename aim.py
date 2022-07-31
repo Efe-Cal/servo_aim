@@ -44,7 +44,7 @@ GPIO.setup(servoPIN2, GPIO.OUT)
 pwm2 = GPIO.PWM(servoPIN2, 50) 
 pwm2.start(0)
 
-class servo_control():
+class ServoControl:
     def __init__(self):
         self.current_angle=0
     def aciAyarla(self,aci,no):
